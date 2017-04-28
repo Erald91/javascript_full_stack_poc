@@ -1,0 +1,15 @@
+{
+  "name": "nodejs_webscoket_chat",
+  "version": "1.0.0",
+  "description": "Test Task JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "erald.c@scopicsoftware.com",
+  "license": "ISC",
+  "dependencies": {
+    "node-session": "^1.2.1",
+    "underscore": "^1.8.3"
+  }
+}

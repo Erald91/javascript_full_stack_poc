@@ -1,0 +1,141 @@
+.body, p, div {
+	padding: 0px;
+	margin: 0px;
+}
+
+div.container {
+	width: 100%;
+	float: left;
+}
+
+/* Helper classes */
+.set-right {
+	float: right;
+}
+
+.set-text-right {
+	text-align: right;
+}
+
+.set-text-center {
+	text-align: center;
+}
+
+div.form-container {
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid gray;
+	margin-top: 20px;
+	padding: 10px 30px;
+	display: flow-root;
+}
+
+div.login-container {
+	width: 300px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+div.chat-container {
+	width: 400px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+div.form-container > header > h3 {
+	text-align: center;
+}
+
+div.form-container.chat-container > header > h3 {
+	color: brown;
+	font-style: italic;
+}
+
+div.form-container label {
+	font-weight: bold;
+}
+
+div.form-container div.input-container {
+	margin: 3px 0px;
+	width: 100%;
+	float: left;
+}
+
+div.form-container div.input-container > textarea {
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #b6b6b6;
+	padding: 3px 4px;
+	resize: vertical;
+}
+
+div.form-container div.input-container > input[type=text] {
+	width: 100%;
+	border-radius: 4px;
+	height: 30px;
+	border: 1px solid #b6b6b6;
+	padding: 0px 4px;
+}
+
+div.form-container div.input-container > input[type=text]:focus,
+div.form-container div.input-container > textarea:focus {
+	box-shadow: 0 1px 4px #88d5f5;
+	border: 1px solid #23dbcd;
+}
+
+div.container input[type=button] {
+	height: 30px;
+	width: 85px;
+	padding: 5px;
+	color: #ffffff;
+	background: green;
+	border: 1px solid green;
+}
+
+div.form-container input[type=button].login-button:hover {
+	cursor: pointer;
+}
+
+div.container input[type=button].logout-button {
+	width: 65px;
+	padding: 0px 3px;
+	color: #ffffff;
+	background: #d9534f;
+	border: 1px solid #d43f3a;
+	border-radius: 5px;
+}
+
+div.form-container input[type=button].logout-button:hover {
+	background: #ec4a45;
+	border: 1px solid #f3221b;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+div.container input[type=button].send-button {
+	height: 30px;
+	width: 85px;
+	padding: 5px;
+	color: #ffffff;
+	background: #f0ad4e;
+	border: 1px solid #eea236;
+}
+
+div.form-container input[type=button].send-button:hover {
+	color: #f3221b;
+	background: #ed971c;
+	border: 1px solid #ed971c;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+
+span.user-name {
+	font-style: italic;
+	font-weight: bold; 
+}
+
+ul.chat-list {
+	padding: 0px;
+	list-style-type: none;
+}

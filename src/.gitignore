@@ -1,0 +1,3 @@
+# Below files and folders will be ignored from repo
+/node_modules
+/sessions
