@@ -1,0 +1,41 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html">
+		<title>Chat</title>
+		<!-- CSS dependencies -->
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.min.css">
+		<!-- JavaScript dependencies -->
+		<script type="text/javascript" src="jQuery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="/socket.io-client/dist/socket.io.min.js"></script>
+		<script type="text/javascript" src="/js/socket.io.client.js"></script>
+		<script type="text/javascript" src="/js/user-activity.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="form-container chat-container">
+				<header>
+					<div class="set-text-right">
+						<span class="user-name" id="user-name-id"><%= user.username %></span> 
+						<button class="logout-button" name="logout" id="logout" onclick="location.href='/logout'"><i class="fa fa-sign-out" aria-hidden="true"></i></button>
+					</div>
+					<h3>CHAT HISTORY</h3>
+				</header>
+				<div class="chat-history-container">
+					<ul class="chat-list"></ul>
+				</div>
+				<div>
+					<label>Message:</label>
+					<div class="input-container">
+						<textarea class="text-area" id="user-message" rows="4"></textarea>
+					</div>
+					<div class="input-container">
+						<input type="button" class="send-button set-right" name="send-button" id="send-button" value="Send">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

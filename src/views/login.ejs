@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html">
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="form-container login-container">
+				<header>
+					<h3>CHAT LOGIN</h3>
+				</header>
+				<div>
+					<form action="/login" method="post" enctype="application/x-www-urlencoded">
+						<label>Username:</label>
+						<div class="input-container">
+							<input type="text" name="username" id="username" value="">
+						</div>
+						<div class="input-container">
+							<% if(messages.error) { %>
+								<span class="error"><%= messages.error %></span>
+							<% } %>
+						</div>
+						<div class="input-container">
+							<input type="button" class="login-button set-right" name="login" id="login" onclick="document.forms[0].submit()" value="Log In">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

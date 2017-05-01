@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_webscoket_chat",
+  "description": "Test Task JavaScript",
+  "main": "app.js",
+  "authors": [
+    "erald.c@scopicsoftware.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Erald91/javascript_test_task",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "Font-Awesome#^4.7.0",
+    "jQuery": "^3.2.1",
+    "socket.io-client": "^1.7.2"
+  }
+}

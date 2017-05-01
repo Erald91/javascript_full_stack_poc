@@ -96,16 +96,17 @@ div.form-container input[type=button].login-button:hover {
 	cursor: pointer;
 }
 
-div.container input[type=button].logout-button {
-	width: 65px;
+div.container button.logout-button {
+	width: 28px;
+	height: 28px;
 	padding: 0px 3px;
 	color: #ffffff;
 	background: #d9534f;
 	border: 1px solid #d43f3a;
-	border-radius: 5px;
+	border-radius: 14px;
 }
 
-div.form-container input[type=button].logout-button:hover {
+div.form-container button.logout-button:hover {
 	background: #ec4a45;
 	border: 1px solid #f3221b;
 	color: #ffffff;
@@ -129,6 +130,9 @@ div.form-container input[type=button].send-button:hover {
 	cursor: pointer;
 }
 
+span.error {
+	color: red;
+}
 
 span.user-name {
 	font-style: italic;
@@ -138,4 +142,25 @@ span.user-name {
 ul.chat-list {
 	padding: 0px;
 	list-style-type: none;
+}
+
+ul.chat-list > li.message-container {
+	border-left: 2px solid red;
+	padding-left: 5px;
+	border-bottom-left-radius: 5px;
+	margin-bottom: 15px;
+}
+
+i.empty-sign {
+	color: red;
+}
+
+span.message-username {
+	font-weight: bold;
+	font-style: italic;
+}
+
+span.message-date {
+	font-weight: bold;
+	color: darkturquoise;
 }
